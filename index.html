@@ -29,6 +29,7 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
+    <div class="wrap-feedback"></div>
     <div class="wrapper">
       <header class="header">
         <div class="container">
@@ -40,7 +41,7 @@
             </div>
             <div class="header__top-block">
               <div class="contacts mn">  <a href="tel:+7(8482)21-03-03">+7 (8482) 21-03-03</a></div>
-              <div class="addres"> <a href="#">ул. Лесная, 1, 210 офис; 2 эт.</a></div>
+              <div class="addres"> <a href="https://yandex.ru/maps/?rtext=~53.528796,49.392563&amp;rtt=mt" target="_blank">ул. Лесная, 1, 210 офис; 2 эт.</a></div>
             </div>
             <div class="header__top-block">
               <div class="contacts mn">  <a href="tel:+7(902)373-32-94">+7 (902) 373-32-94</a></div>
@@ -54,70 +55,72 @@
                   <li><a href="viber://chat?number=79023733294"> <img src="../wp-content/themes/genesis/assets/img/icons/viber.svg" alt="Viber"></a></li>
                 </ul>
               </nav>
-              <button class="header__btn-ring mn">Обратный звонок</button>
+              <button class="header__btn-ring mn btn-call">Обратный звонок</button>
             </div>
             <button class="header__btn-version">Версия для слабовидящих</button>
           </div>
           <div class="header__bottom">
-            <div class="hamburger-menu">
-              <input id="menu__toggle" type="checkbox">
-              <label class="menu__btn" for="menu__toggle"><span></span></label>
-              <div class="menu__box">
-                <nav class="header__nav">
-                  <ul class="header__nav-list">
-                    <li class="header__nav-item"><a class="header__item-link" href="about.html"><span class="link-arow">О центре</span></a>
-                      <ul class="header__drop-menu reset">
-                        <li class="header__drop-item"><a class="header__drop-link" href="staff.html">Специалисты</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="licenses.html">Лицензии</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="schedule.html">Расписание</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="reception.html">Правила записи на первичный приём</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="treatment-metods.html">Методы лечения</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Наркология</a></li>
-                      </ul>
-                    </li>
-                    <li class="header__nav-item"><a class="header__item-link" href="services.html"><span class="link-arow">Услуги центра</span></a>
-                      <ul class="header__drop-menu">
-                        <li class="header__drop-item"><a class="header__drop-link" href="alcoholism-treatment.html">Лечение алкоголизма</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Снятие алкогольной интоксикации</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Кодирование от алкоголизма</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Лечение наркомании</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Вывод из запоя</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Лечение табакокурения</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Услуги психотерапевта</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Услуги психолога</a></li>
-                      </ul>
-                    </li>
-                    <li class="header__nav-item"><a class="header__item-link" href="#">Цены на услуги</a></li>
-                    <li class="header__nav-item"><a class="header__item-link" href="#">Вызов врача на дом</a></li>
-                    <li class="header__nav-item"><a class="header__item-link" href="#">Отзывы</a></li>
-                    <li class="header__nav-item"><a class="header__item-link" href="#">Блог</a></li>
-                    <li class="header__nav-item"><a class="header__item-link" href="#">Контакты</a></li>
-                  </ul>
-                </nav>
-                <div class="menu__box-bottom">
-                  <div class="contacts"> <a href="tel:+7(8482)21-03-03">+7 (8482) 21-03-03</a></div>
-                  <div class="contacts"> <a href="tel:+7(902)373-32-94">+7 (902) 373-32-94</a></div>
-                  <nav class="social"> 
-                    <ul> 
-                      <li><a href="//api.whatsapp.com/send?phone=79023733294" target="_blank"><img src="../wp-content/themes/genesis/assets/img/icons/whatsapp.svg" alt="Whatsapp"></a></li>
-                      <li><a href="https://vk.com/club31456944" target="_blank"> <img src="../wp-content/themes/genesis/assets/img/icons/vk.svg" alt="VK"></a></li>
-                      <li><a href="viber://chat?number=79023733294" target="_blank"> <img src="../wp-content/themes/genesis/assets/img/icons/viber.svg" alt="Viber"></a></li>
+            <div class="header__bottom-inner">
+              <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox">
+                <label class="menu__btn" for="menu__toggle"><span></span></label>
+                <div class="menu__box">
+                  <nav class="header__nav">
+                    <ul class="header__nav-list">
+                      <li class="header__nav-item"><a class="header__item-link" href="about.html"><span class="link-arow">О центре</span></a>
+                        <ul class="header__drop-menu reset">
+                          <li class="header__drop-item"><a class="header__drop-link" href="staff.html">Специалисты</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="licenses.html">Лицензии</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="schedule.html">Расписание</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="reception.html">Правила записи на первичный приём</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="treatment-metods.html">Методы лечения</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="narcology.html">Наркология</a></li>
+                        </ul>
+                      </li>
+                      <li class="header__nav-item"><a class="header__item-link" href="services.html"><span class="link-arow">Услуги центра</span></a>
+                        <ul class="header__drop-menu">
+                          <li class="header__drop-item"><a class="header__drop-link" href="alcoholism-treatment.html">Лечение алкоголизма</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="#">Снятие алкогольной интоксикации</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="#">Кодирование от алкоголизма</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="#">Лечение наркомании</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="#">Вывод из запоя</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="#">Лечение табакокурения</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="#">Услуги психотерапевта</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="#">Услуги психолога</a></li>
+                        </ul>
+                      </li>
+                      <li class="header__nav-item"><a class="header__item-link" href="prices.html">Цены на услуги</a></li>
+                      <li class="header__nav-item"><a class="header__item-link" href="doctor-at-home.html">Вызов врача на дом</a></li>
+                      <li class="header__nav-item"><a class="header__item-link" href="reviews.html">Отзывы</a></li>
+                      <li class="header__nav-item"><a class="header__item-link" href="blog.html">Блог</a></li>
+                      <li class="header__nav-item"><a class="header__item-link" href="contacts.html">Контакты</a></li>
                     </ul>
                   </nav>
-                  <button class="header__btn-ring">Обратный звонок</button>
+                  <div class="menu__box-bottom">
+                    <div class="contacts"> <a href="tel:+7(8482)21-03-03">+7 (8482) 21-03-03</a></div>
+                    <div class="contacts"> <a href="tel:+7(902)373-32-94">+7 (902) 373-32-94</a></div>
+                    <nav class="social"> 
+                      <ul> 
+                        <li><a href="//api.whatsapp.com/send?phone=79023733294" target="_blank"><img src="./wp-content/themes/genesis/assets/img/icons/whatsapp.svg" alt="Whatsapp"></a></li>
+                        <li><a href="https://vk.com/club31456944" target="_blank"> <img src="./wp-content/themes/genesis/assets/img/icons/vk.svg" alt="VK"></a></li>
+                        <li><a href="viber://chat?number=79023733294" target="_blank"> <img src="./wp-content/themes/genesis/assets/img/icons/viber.svg" alt="Viber"></a></li>
+                      </ul>
+                    </nav>
+                    <button class="header__btn-ring btn-call">Обратный звонок</button>
+                  </div>
                 </div>
               </div>
+              <form class="form-mn" action="#">
+                <label>
+                  <input class="_req" type="text" placeholder="Поиск по сайту">
+                </label>
+                <button class="btn btn-send btn-form">Найти</button>
+              </form>
             </div>
-            <form class="form-mn" action="#">
-              <label>
-                <input class="_req" type="text" placeholder="Поиск по сайту">
-              </label>
-              <button class="btn btn-send btn-form">Найти</button>
-            </form>
           </div>
         </div>
       </header>
-      <section class="banner-home">
+      <section class="banner banner--home">
         <div class="container">
           <div class="banner">
             <div class="banner__inner">
@@ -132,8 +135,8 @@
                     <li class="adantages__item">Медики со стажем от 20 лет</li>
                   </ul>
                   <div class="banner__content__bottom">
-                    <button class="btn btn--blue">Вызвать врача</button>
-                    <button class="btn btn--blue">Получить консультацию</button>
+                    <button class="btn btn--blue btn-call">Вызвать врача</button>
+                    <button class="btn btn--blue btn-consult">Получить консультацию</button>
                     <div class="banner__doctor-call">
                       <svg width="20" height="20">
                         <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#alarm"> </use>
@@ -162,7 +165,7 @@
             нормальной жизни тысячи пациентов, пройдя кодирование от алкоголизма
           </div>
           <div class="content-block content-block--about-us">
-            <div class="content-block__img gradient"><img src="./wp-content/themes/genesis/assets/img/about-us.jpg" alt="Центр психотерапии и наркологии в Тольятти «Генезис»" width="666" height="291"></div>
+            <div class="content-block__img gradient"><img src="./wp-content/themes/genesis/assets/img/treatment.jpg" alt="Центр психотерапии и наркологии в Тольятти «Генезис»" width="666" height="291"></div>
             <div class="content-block__text text">
               <p>
                 Врачи нашей клиники подходят к лечению алкоголиков комплексно. Мы не ограничиваемся устранением абстинентного синдрома, коррекцией сопутствующей психопатологии.</p>
@@ -208,7 +211,7 @@
             Можем поручиться за результат, наши доктора имеют многолетний и успешный стаж профессиональной деятельности</div>
           <div class="services-cards"> 
             <article class="service__card">
-              <div class="card__price label">от 2 000 р.</div>
+              <div class="card__price label">от 2 000 ₽</div>
               <div class="card__img gradient"><img src="./wp-content/themes/genesis/assets/img/alcoholism.jpg" alt="Лечение алкоголизма" width="391" height="162"></div>
               <h3 class="card__title">Алкоголизм</h3>
               <div class="card__text text">
@@ -217,7 +220,7 @@
               </div><a class="btn btn--blue btn--blue-service-card" href="#!">Подробнее</a>
             </article>
             <article class="service__card">
-              <div class="card__price label">от 2 500 р.</div>
+              <div class="card__price label">от 2 500 ₽</div>
               <div class="card__img gradient"><img src="./wp-content/themes/genesis/assets/img/smoking.jpg" alt="Лечение табакокурения" width="391" height="162"></div>
               <h3 class="card__title">Табакокурение</h3>
               <div class="card__text text">
@@ -226,14 +229,14 @@
               </div><a class="btn btn--blue btn--blue-service-card" href="#!">Подробнее</a>
             </article>
             <article class="service__card">
-              <div class="card__price label">от 2 500 р.</div>
+              <div class="card__price label">от 2 500 ₽</div>
               <div class="card__img gradient"><img src="./wp-content/themes/genesis/assets/img/drug-addiction.jpg" alt="Лечение наркомании" width="391" height="162"></div>
               <h3 class="card__title">Наркомания</h3>
               <div class="card__text text">
                 Странное поведение близкого человека дают повод объективно присмотреться к нему и выявить признаки наркомании. Если таковые имеются, то не медлите с диагностикой и профилактикой!</div><a class="btn btn--blue btn--blue-service-card" href="#!">Подробнее</a>
             </article>
             <article class="service__card">
-              <div class="card__price label">от 4 000 р.</div>
+              <div class="card__price label">от 4 000 ₽</div>
               <div class="card__img gradient"><img src="./wp-content/themes/genesis/assets/img/coding.jpg" alt="Кодирование" width="391" height="162"></div>
               <h3 class="card__title">Кодирование</h3>
               <div class="card__text text">
@@ -242,7 +245,7 @@
               </div><a class="btn btn--blue btn--blue-service-card" href="#!">Подробнее</a>
             </article>
             <article class="service__card">
-              <div class="card__price label">от 2 500 р.</div>
+              <div class="card__price label">от 2 500 ₽</div>
               <div class="card__img gradient"><img src="./wp-content/themes/genesis/assets/img/psychotherapy.jpg" alt="Психотерапия" width="391" height="162"></div>
               <h3 class="card__title">Психотерапия</h3>
               <div class="card__text text">
@@ -251,8 +254,8 @@
               </div><a class="btn btn--blue btn--blue-service-card" href="#!">Подробнее</a>
             </article>
             <article class="service__card">
-              <div class="card__price label">от 2 000 р.</div>
-              <div class="card__img gradient"><img src="./wp-content/themes/genesis/assets/img/psychology.jpg" alt="Психология" width="391" height="162"></div>
+              <div class="card__price label">от 2 000 ₽</div>
+              <div class="card__img gradient"><img src="./wp-content/themes/genesis/assets/img/treatment.jpg" alt="Психология" width="391" height="162"></div>
               <h3 class="card__title">Психология</h3>
               <div class="card__text text">
                 Нередко случается так, что со своими проблемами мы не можем обратиться к близким людям, и на это есть свои причины – мы думаем, что близкие нас не поймут, 
@@ -271,7 +274,7 @@
             сертификат специалиста в своей области.
           </div>
           <div class="specialists__content"> 
-            <div class="specialists__photo gradient-short"><img src="./wp-content/themes/genesis/assets/img/doctor-1.jpg" width="314" height="472" alt="Врач">
+            <div class="specialists__photo gradient-short"><img src="./wp-content/themes/genesis/assets/img/doctor-1.jpg" width="314" height="472" alt="Андрей Геннадьевич Ткач">
               <div class="specialists__experience">Опыт работы более <span class="specialists__number">25</span> лет</div>
             </div>
             <div class="specialists__info">
@@ -294,9 +297,78 @@
                 <div class="slider-wrap"> 
                   <div class="swiper-container swiper-lisences--small-first">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide slide-lisences--small"><img src="./wp-content/themes/genesis/assets/img/license.jpg" alt="Лицензия" width="316" height="474"></div>
-                      <div class="swiper-slide slide-lisences--small"><img src="./wp-content/themes/genesis/assets/img/license.jpg" alt="Лицензия" width="316" height="474"></div>
-                      <div class="swiper-slide slide-lisences--small"><img src="./wp-content/themes/genesis/assets/img/license.jpg" alt="Лицензия" width="316" height="474"></div>
+                      <div class="swiper-slide slide-lisences--small"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-1-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-1.jpg" alt="Лицензия" width="316" height="474">
+                        <div class="img__overlay"></div>
+                        <div class="eye">
+                          <svg width="100" height="100">
+                            <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide-lisences--small"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-2-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-2.jpg" alt="Лицензия" width="316" height="474">
+                        <div class="img__overlay"></div>
+                        <div class="eye">
+                          <svg width="100" height="100">
+                            <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide-lisences--small"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-3-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-3.jpg" alt="Лицензия" width="316" height="474">
+                        <div class="img__overlay"></div>
+                        <div class="eye">
+                          <svg width="100" height="100">
+                            <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide-lisences--small"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-4-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-4.jpg" alt="Лицензия" width="316" height="474">
+                        <div class="img__overlay"></div>
+                        <div class="eye">
+                          <svg width="100" height="100">
+                            <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide-lisences--small"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-5-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-5.jpg" alt="Лицензия" width="316" height="474">
+                        <div class="img__overlay"></div>
+                        <div class="eye">
+                          <svg width="100" height="100">
+                            <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide-lisences--small"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-6-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-6.jpg" alt="Лицензия" width="316" height="474">
+                        <div class="img__overlay"></div>
+                        <div class="eye">
+                          <svg width="100" height="100">
+                            <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide-lisences--small"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-13-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-13.jpg" alt="Лицензия" width="316" height="474">
+                        <div class="img__overlay"></div>
+                        <div class="eye">
+                          <svg width="100" height="100">
+                            <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide-lisences--small"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-14-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-14.jpg" alt="Лицензия" width="316" height="474">
+                        <div class="img__overlay"></div>
+                        <div class="eye">
+                          <svg width="100" height="100">
+                            <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide-lisences--small"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-15-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-15.jpg" alt="Лицензия" width="316" height="474">
+                        <div class="img__overlay"></div>
+                        <div class="eye">
+                          <svg width="100" height="100">
+                            <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                          </svg>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="swiper-button-prev-lisences--small-first"></div>
@@ -334,40 +406,43 @@
               проводятся настоящими профессионалами
             </div>
           </div>
-          <div class="advantages">
-            <div class="numbers-block"> 
-              <div class="green-square green-square--advantages">
-                <svg width="45" height="45">
-                  <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#advantage-1"></use>
-                </svg>
+          <section class="advantages">
+            <div class="btn btn--green">Преимущества</div>
+            <div class="numbers">
+              <div class="numbers-block"> 
+                <div class="green-square green-square--advantages">
+                  <svg width="45" height="45">
+                    <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#advantage-1"></use>
+                  </svg>
+                </div>
+                <div class="counts__text counts__text--advantages">Анонимно и конфиденциально</div>
               </div>
-              <div class="counts__text counts__text--advantages">Анонимно и конфиденциально</div>
-            </div>
-            <div class="numbers-block"> 
-              <div class="green-square green-square--advantages">
-                <svg width="45" height="45">
-                  <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#advantage-2"></use>
-                </svg>
+              <div class="numbers-block"> 
+                <div class="green-square green-square--advantages">
+                  <svg width="45" height="45">
+                    <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#advantage-2"></use>
+                  </svg>
+                </div>
+                <div class="counts__text counts__text--advantages">Работаем со <br> сложными случаями</div>
               </div>
-              <div class="counts__text counts__text--advantages">Работаем со <br> сложными случаями</div>
-            </div>
-            <div class="numbers-block"> 
-              <div class="green-square green-square--advantages">
-                <svg width="45" height="45">
-                  <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#advantage-3"></use>
-                </svg>
+              <div class="numbers-block"> 
+                <div class="green-square green-square--advantages">
+                  <svg width="45" height="45">
+                    <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#advantage-3"></use>
+                  </svg>
+                </div>
+                <div class="counts__text counts__text--advantages">Эффективная программа</div>
               </div>
-              <div class="counts__text counts__text--advantages">Эффективная программа</div>
-            </div>
-            <div class="numbers-block"> 
-              <div class="green-square green-square--advantages">
-                <svg width="45" height="45">
-                  <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#advantage-4"></use>
-                </svg>
+              <div class="numbers-block"> 
+                <div class="green-square green-square--advantages">
+                  <svg width="45" height="45">
+                    <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#advantage-4"></use>
+                  </svg>
+                </div>
+                <div class="counts__text counts__text--advantages">Восстановление здоровья и психики</div>
               </div>
-              <div class="counts__text counts__text--advantages">Восстановление здоровья и психики</div>
             </div>
-          </div>
+          </section>
           <div class="content-block content-block--guarantees">
             <div class="content-block__img content-block__img--guarantees gradient"><img src="./wp-content/themes/genesis/assets/img/guarantees.jpg" alt="Наши гарантии" width="665" height="375"></div>
             <div class="content-block__text content-block__text--guarantees text">
@@ -386,9 +461,7 @@
             </div>
           </div>
           <div class="gray-block gray-block--guarantees">
-            <div class="section__subtitle section__subtitle--guarantees">Мы гарантируем <i>бережное и внимательное отношение</i> ко всем клиентам. Все методы лечения обладают высокой эффективностью и безопасностью, поскольку 
-              проводятся настоящими профессионалами
-            </div>
+            <div class="section__subtitle section__subtitle--guarantees"><i>Здоровье физическое и душевное – самое ценное</i>, <strong>что у нас есть. <br> Как говорится: “Было бы здоровье, остальное купишь”.</strong> <br> <span>Не откладывайте на завтра, “с понедельника”, в “долгий ящик” то, что можно уже сделать прямо сейчас. Ведь промедление порой “смерти подобно”.</span></div><a class="btn btn--blue" href="#!">Бесплатная консультация</a>
           </div>
         </div>
       </section>
@@ -399,10 +472,78 @@
           <div class="slider-wrap"> 
             <div class="swiper-container swiper-licenses">
               <div class="swiper-wrapper">
-                <div class="swiper-slide slide-licenses"><img src="./wp-content/themes/genesis/assets/img/license.jpg" alt="Лицензия" width="316" height="474"></div>
-                <div class="swiper-slide slide-licenses"><img src="./wp-content/themes/genesis/assets/img/license.jpg" alt="Лицензия" width="316" height="474"></div>
-                <div class="swiper-slide slide-licenses"><img src="./wp-content/themes/genesis/assets/img/license.jpg" alt="Лицензия" width="316" height="474"></div>
-                <div class="swiper-slide slide-licenses"><img src="./wp-content/themes/genesis/assets/img/license.jpg" alt="Лицензия" width="316" height="474"></div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-4-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-4.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-5-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-5.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-6-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-6.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-7-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-7.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-8-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-8.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-9-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-9.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-10-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-10.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-11-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-11.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-12-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-12.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="swiper-button-prev--licenses"></div>
@@ -486,39 +627,39 @@
             <div class="step">
               <div class="step__number label">Шаг первый</div>
               <div class="step__content">
-                <div class="step__title">Бесплатная консультация</div>
-                <div class="step__text text">
-                  Текст о том, что можно придти консультацию, это бесплатно, а также анонимно и полностью конфиденциально.</div>
-                <div class="step__list-title">По завершению консультации вы получите:</div>
-                <ul class="step__list list-style">
-                  <li class="step__list-item">Варианты лечения заболевания</li>
-                  <li class="step__list-item">Рекомендации врача</li>
+                <h3>Бесплатная консультация</h3>
+                <p>
+                  Текст о том, что можно придти консультацию, это бесплатно, а также анонимно и полностью конфиденциально.</p>
+                <h4>По завершению консультации вы получите:</h4>
+                <ul>
+                  <li>Варианты лечения заболевания</li>
+                  <li>Рекомендации врача</li>
                 </ul>
               </div>
             </div>
             <div class="step">
               <div class="step__number label">Шаг второй</div>
               <div class="step__content">
-                <div class="step__title">Подписание договора</div>
-                <div class="step__text text">
-                  Возможно про то, что мы несём ответственность за здоровье наших пациентов и это закреплено договором.</div>
-                <div class="step__list-title">В договоре закреплены ваши права:</div>
-                <ul class="step__list list-style">
-                  <li class="step__list-item">Варианты лечения заболевания</li>
-                  <li class="step__list-item">Рекомендации врача</li>
+                <h3>Подписание договора</h3>
+                <p>
+                  Возможно про то, что мы несём ответственность за здоровье наших пациентов и это закреплено договором.</p>
+                <h4>В договоре закреплены ваши права:</h4>
+                <ul>
+                  <li>Варианты лечения заболевания</li>
+                  <li>Рекомендации врача</li>
                 </ul>
               </div>
             </div>
             <div class="step">
               <div class="step__number label">Шаг третий</div>
               <div class="step__content">
-                <div class="step__title">Лечение</div>
-                <div class="step__text text">
-                  Возможно про то, что мы несём ответственность за здоровье нашихпациентов и это закреплено договором.</div>
-                <div class="step__list-title">В договоре закреплены ваши права:</div>
-                <ul class="step__list list-style">
-                  <li class="step__list-item">Варианты лечения заболевания</li>
-                  <li class="step__list-item">Рекомендации врача</li>
+                <h3>Лечение</h3>
+                <p>
+                  Возможно про то, что мы несём ответственность за здоровье нашихпациентов и это закреплено договором.</p>
+                <h4>В договоре закреплены ваши права:</h4>
+                <ul>
+                  <li>Варианты лечения заболевания</li>
+                  <li>Рекомендации врача</li>
                 </ul>
               </div>
             </div>
@@ -532,7 +673,7 @@
                   В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, 
                   используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без 
                   заметных изменений пять веков, но и перешагнул в электронный дизайн.
-                </div><a class="btn btn--problem-solution" href="#!">Записаться на консультацию</a>
+                </div><a class="btn btn--white" href="#!">Записаться на консультацию</a>
               </div>
               <div class="content-block__img content-block__img--problem-solution gradient"> <img src="./wp-content/themes/genesis/assets/img/consultation.jpg" alt="Консультация в центре наркологии и психотерапии в Тольятти" width="400" height="250"></div>
             </div>
@@ -600,11 +741,11 @@
           <div class="btn btn--green">Консультация</div>
           <h2 class="section__title section__title--form">Запишитесь на консультацию</h2>
           <div class="section__description section__description--form">Расскажите вкратце о проблеме в форме обратной связи. <br> На ваши вопросы ответит нарколог в процессе личной консультации.</div>
-          <form class="main-form main-form--down" id="form__down" action="#" method="post">
+          <form class="main-form main-form--down" id="form__down" action="#" method="POST">
             <div class="inputs-wrap"> 
-              <input class="_req main-form__user-name" type="text" name="user-name" placeholder="Ваше имя" required="required">
-              <input class="_req phone-input main-form__user-phone" type="text" name="user-phone" placeholder="+ 7 ___ - __ - __" required="required">
-              <input class="_req main-form__user-email" type="email" name="user-email" placeholder="Электронная почта" required="required">
+              <input class="_req main-form__user-name" type="text" name="user-name" placeholder="Ваше имя">
+              <input class="_req phone-input main-form__user-phone" type="text" name="user-phone" placeholder="+ 7 ___ - __ - __">
+              <input class="_req main-form__user-email" type="email" name="user-email" placeholder="Электронная почта">
             </div>
             <textarea class="_req main-form__user-message" name="user-message" placeholder="Напишите ваш вопрос"></textarea>
             <button class="btn btn--blue btn-send" type="submit">Отправить заявку</button>
@@ -631,20 +772,19 @@
               <p>Задайте ваш вопрос в мессенджерах:</p>
               <nav class="social"> 
                 <ul> 
-                  <li><a href="//api.whatsapp.com/send?phone=79023733294" target="_blank"><img src="../wp-content/themes/genesis/assets/img/icons/whatsapp.svg" alt="Whatsapp"></a></li>
-                  <li><a href="https://vk.com/club31456944" target="_blank"> <img src="../wp-content/themes/genesis/assets/img/icons/vk.svg" alt="VK"></a></li>
-                  <li><a href="viber://chat?number=79023733294" target="_blank"> <img src="../wp-content/themes/genesis/assets/img/icons/viber.svg" alt="Viber"></a></li>
+                  <li><a href="//api.whatsapp.com/send?phone=79023733294" target="_blank"><img src="./wp-content/themes/genesis/assets/img/icons/whatsapp.svg" alt="Whatsapp"></a></li>
+                  <li><a href="https://vk.com/club31456944" target="_blank"> <img src="./wp-content/themes/genesis/assets/img/icons/vk.svg" alt="VK"></a></li>
+                  <li><a href="viber://chat?number=79023733294" target="_blank"> <img src="./wp-content/themes/genesis/assets/img/icons/viber.svg" alt="Viber"></a></li>
                 </ul>
               </nav>
             </div>
-            <button class="btn">Обратный звонок</button>
+            <button class="btn btn-call">Обратный звонок</button>
           </div>
-          <div class="footer__bottom"><a href="#" target="_blank">Карта сайта</a><a href="#" target="_blank">Права и обязанности граждан в сфере охраны здоровья</a><a href="#" target="_blank">Политика конфиденциальности</a></div>
+          <div class="footer__bottom"><a href="site-map.html" target="_blank">Карта сайта</a><a href="documents.html" target="_blank">Права и обязанности граждан в сфере охраны здоровья</a><a href="#" target="_blank">Политика конфиденциальности</a></div>
         </div>
       </footer>
     </div>
     <script defer src="./wp-content/themes/genesis/assets/js/swiper-bundle.min.js"></script>
-    <script defer src="./wp-content/themes/genesis/assets/js/fslightbox.js"></script>
     <script defer src="./wp-content/themes/genesis/assets/js/main.js"></script>
   </body>
 </html>

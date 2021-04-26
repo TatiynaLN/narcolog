@@ -29,6 +29,7 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
+    <div class="wrap-feedback"></div>
     <div class="wrapper">
       <header class="header">
         <div class="container">
@@ -40,7 +41,7 @@
             </div>
             <div class="header__top-block">
               <div class="contacts mn">  <a href="tel:+7(8482)21-03-03">+7 (8482) 21-03-03</a></div>
-              <div class="addres"> <a href="#">ул. Лесная, 1, 210 офис; 2 эт.</a></div>
+              <div class="addres"> <a href="https://yandex.ru/maps/?rtext=~53.528796,49.392563&amp;rtt=mt" target="_blank">ул. Лесная, 1, 210 офис; 2 эт.</a></div>
             </div>
             <div class="header__top-block">
               <div class="contacts mn">  <a href="tel:+7(902)373-32-94">+7 (902) 373-32-94</a></div>
@@ -54,71 +55,578 @@
                   <li><a href="viber://chat?number=79023733294"> <img src="../wp-content/themes/genesis/assets/img/icons/viber.svg" alt="Viber"></a></li>
                 </ul>
               </nav>
-              <button class="header__btn-ring mn">Обратный звонок</button>
+              <button class="header__btn-ring mn btn-call">Обратный звонок</button>
             </div>
             <button class="header__btn-version">Версия для слабовидящих</button>
           </div>
           <div class="header__bottom">
-            <div class="hamburger-menu">
-              <input id="menu__toggle" type="checkbox">
-              <label class="menu__btn" for="menu__toggle"><span></span></label>
-              <div class="menu__box">
-                <nav class="header__nav">
-                  <ul class="header__nav-list">
-                    <li class="header__nav-item"><a class="header__item-link" href="about.html"><span class="link-arow">О центре</span></a>
-                      <ul class="header__drop-menu reset">
-                        <li class="header__drop-item"><a class="header__drop-link" href="staff.html">Специалисты</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="licenses.html">Лицензии</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="schedule.html">Расписание</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="reception.html">Правила записи на первичный приём</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="treatment-metods.html">Методы лечения</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Наркология</a></li>
-                      </ul>
-                    </li>
-                    <li class="header__nav-item"><a class="header__item-link" href="services.html"><span class="link-arow">Услуги центра</span></a>
-                      <ul class="header__drop-menu">
-                        <li class="header__drop-item"><a class="header__drop-link" href="alcoholism-treatment.html">Лечение алкоголизма</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Снятие алкогольной интоксикации</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Кодирование от алкоголизма</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Лечение наркомании</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Вывод из запоя</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Лечение табакокурения</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Услуги психотерапевта</a></li>
-                        <li class="header__drop-item"><a class="header__drop-link" href="#">Услуги психолога</a></li>
-                      </ul>
-                    </li>
-                    <li class="header__nav-item"><a class="header__item-link" href="#">Цены на услуги</a></li>
-                    <li class="header__nav-item"><a class="header__item-link" href="#">Вызов врача на дом</a></li>
-                    <li class="header__nav-item"><a class="header__item-link" href="#">Отзывы</a></li>
-                    <li class="header__nav-item"><a class="header__item-link" href="#">Блог</a></li>
-                    <li class="header__nav-item"><a class="header__item-link" href="#">Контакты</a></li>
-                  </ul>
-                </nav>
-                <div class="menu__box-bottom">
-                  <div class="contacts"> <a href="tel:+7(8482)21-03-03">+7 (8482) 21-03-03</a></div>
-                  <div class="contacts"> <a href="tel:+7(902)373-32-94">+7 (902) 373-32-94</a></div>
-                  <nav class="social"> 
-                    <ul> 
-                      <li><a href="//api.whatsapp.com/send?phone=79023733294" target="_blank"><img src="../wp-content/themes/genesis/assets/img/icons/whatsapp.svg" alt="Whatsapp"></a></li>
-                      <li><a href="https://vk.com/club31456944" target="_blank"> <img src="../wp-content/themes/genesis/assets/img/icons/vk.svg" alt="VK"></a></li>
-                      <li><a href="viber://chat?number=79023733294" target="_blank"> <img src="../wp-content/themes/genesis/assets/img/icons/viber.svg" alt="Viber"></a></li>
+            <div class="header__bottom-inner">
+              <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox">
+                <label class="menu__btn" for="menu__toggle"><span></span></label>
+                <div class="menu__box">
+                  <nav class="header__nav">
+                    <ul class="header__nav-list">
+                      <li class="header__nav-item"><a class="header__item-link" href="about.html"><span class="link-arow">О центре</span></a>
+                        <ul class="header__drop-menu reset">
+                          <li class="header__drop-item"><a class="header__drop-link" href="staff.html">Специалисты</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="licenses.html">Лицензии</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="schedule.html">Расписание</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="reception.html">Правила записи на первичный приём</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="treatment-metods.html">Методы лечения</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="narcology.html">Наркология</a></li>
+                        </ul>
+                      </li>
+                      <li class="header__nav-item"><a class="header__item-link" href="services.html"><span class="link-arow">Услуги центра</span></a>
+                        <ul class="header__drop-menu">
+                          <li class="header__drop-item"><a class="header__drop-link" href="alcoholism-treatment.html">Лечение алкоголизма</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="#">Снятие алкогольной интоксикации</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="#">Кодирование от алкоголизма</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="#">Лечение наркомании</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="#">Вывод из запоя</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="#">Лечение табакокурения</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="#">Услуги психотерапевта</a></li>
+                          <li class="header__drop-item"><a class="header__drop-link" href="#">Услуги психолога</a></li>
+                        </ul>
+                      </li>
+                      <li class="header__nav-item"><a class="header__item-link" href="prices.html">Цены на услуги</a></li>
+                      <li class="header__nav-item"><a class="header__item-link" href="doctor-at-home.html">Вызов врача на дом</a></li>
+                      <li class="header__nav-item"><a class="header__item-link" href="reviews.html">Отзывы</a></li>
+                      <li class="header__nav-item"><a class="header__item-link" href="blog.html">Блог</a></li>
+                      <li class="header__nav-item"><a class="header__item-link" href="contacts.html">Контакты</a></li>
                     </ul>
                   </nav>
-                  <button class="header__btn-ring">Обратный звонок</button>
+                  <div class="menu__box-bottom">
+                    <div class="contacts"> <a href="tel:+7(8482)21-03-03">+7 (8482) 21-03-03</a></div>
+                    <div class="contacts"> <a href="tel:+7(902)373-32-94">+7 (902) 373-32-94</a></div>
+                    <nav class="social"> 
+                      <ul> 
+                        <li><a href="//api.whatsapp.com/send?phone=79023733294" target="_blank"><img src="./wp-content/themes/genesis/assets/img/icons/whatsapp.svg" alt="Whatsapp"></a></li>
+                        <li><a href="https://vk.com/club31456944" target="_blank"> <img src="./wp-content/themes/genesis/assets/img/icons/vk.svg" alt="VK"></a></li>
+                        <li><a href="viber://chat?number=79023733294" target="_blank"> <img src="./wp-content/themes/genesis/assets/img/icons/viber.svg" alt="Viber"></a></li>
+                      </ul>
+                    </nav>
+                    <button class="header__btn-ring btn-call">Обратный звонок</button>
+                  </div>
                 </div>
               </div>
+              <form class="form-mn" action="#">
+                <label>
+                  <input class="_req" type="text" placeholder="Поиск по сайту">
+                </label>
+                <button class="btn btn-send btn-form">Найти</button>
+              </form>
             </div>
-            <form class="form-mn" action="#">
-              <label>
-                <input class="_req" type="text" placeholder="Поиск по сайту">
-              </label>
-              <button class="btn btn-send btn-form">Найти</button>
-            </form>
           </div>
         </div>
       </header>
+      <section class="banner banner--alcohol-treatment">
+        <div class="container">
+          <div class="banner">
+            <div class="banner__inner">
+              <div class="banner__content">
+                <div class="banner__content-left">
+                  <div class="btn btn--green btn--banner">Работаем с 2002 года</div>
+                  <h1 class="main__title">Лечение алкоголизма в Тольятти</h1>
+                  <ul class="adantages-list list list-style">
+                    <li class="adantages__item">Дипломированные и лицензированные специалисты</li>
+                    <li class="adantages__item">Даем гарантию на процедуру</li>
+                    <li class="adantages__item">Оставляем препараты пациентам</li>
+                    <li class="adantages__item">Медики со стажем от 20 лет</li>
+                  </ul>
+                  <div class="banner__content__bottom">
+                    <button class="btn btn--blue btn-call">Вызвать врача</button>
+                    <button class="btn btn--blue">Получить консультацию</button>
+                    <div class="banner__doctor-call">
+                      <svg width="20" height="20">
+                        <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#alarm"> </use>
+                      </svg><span>Вызов врача с 07:00 до 22:00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--homepage" href="index.html">Главная / </a><a>Лечение алкоголизма</a><a></a><span class="breadcrumbs-slash"></span></li>
+          </ul>
+        </nav>
+      </div>
+      <section class="about-us">
+        <div class="container">
+          <div class="gray-block gray-block--about-us">
+            <div class="section__subtitle">Лечение зависимостей в Центре психотерапии и наркологии <i>«Генезис»</i> – шанс вернуться к нормальной жизни <i>уже сегодня!</i></div>
+          </div>
+          <div class="content-block content-block--about-us">
+            <div class="content-block__img content-block__img--alcoholism-treatment gradient"><img src="./wp-content/themes/genesis/assets/img/treatment.jpg" alt="Анонимное лечение алоголизма" width="579" height="285"></div>
+            <div class="content-block__text text">
+              <h2 class="content-block__text-title">Анонимное лечение алоголизма</h2>
+              <p>
+                В наркологическом центре «Генезис» вы можете пройти анонимное лечение алкоголизма в Тольятти. Наша клиника помощи зависимым поможет вам в борьбе с 
+                алкозависимостью, независимо от стадии заболевания.
+              </p>
+              <p>
+                Благодаря организации качественного лечения нашими специалистами, большинство наших пациентов обрели здоровое будущее для себя и своей семьи. Мы проводим лечение больных алкоголизмом только при наличии 
+                добровольного желания и согласия на проведения процедур.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-us-numbers">
+        <div class="container">
+          <div class="btn btn--green">Наши достижения</div>
+          <h2 class="section__title section__title--about-us-numbers">О нас в цифрах:</h2>
+          <div class="gray-block gray-block--about-us-numbers">
+            <div class="numbers-block">
+              <div class="green-square green-square--numbers-block">72</div>
+              <div class="counts__text counts__text--numbers-block">Помогли 72 семьям по РФ</div>
+            </div>
+            <div class="numbers-block">
+              <div class="green-square green-square--numbers-block">20</div>
+              <div class="counts__text counts__text--numbers-block">Работаем почти 20 лет</div>
+            </div>
+            <div class="numbers-block">
+              <div class="green-square green-square--numbers-block">90</div>
+              <div class="counts__text counts__text--numbers-block">90% пациентов не возвращаются к зависимостям</div>
+            </div>
+            <div class="numbers-block">
+              <div class="green-square green-square--numbers-block">25</div>
+              <div class="counts__text counts__text--numbers-block">Опыт работы психиатра нарколога более 25 лет</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="chronic-alcoholism">
+        <div class="container">
+          <div class="btn btn--green">Хронический алкоголизм</div>
+          <h2 class="section__title section__title--alcoholism-treatment">Хронический алкоголизм</h2>
+          <div class="section__description section__description--alcoholism-treatment">
+            Чтобы поставить предварительный диагноз «хронический алкоголизм», достаточно убедиться в присутствии хотя бы двух симптомов из перечисленных ниже:</div>
+          <ul class="check__list check__list--chronic-alcoholism">
+            <li class="check__item">полностью отсутствует рвотная реакция на прием большого количества алкоголя;</li>
+            <li class="check__item">если человек не может самостоятельно остановиться и пьёт обязательно «до отруба»;</li>
+            <li class="check__item">способен пить несколько дней подряд;</li>
+            <li class="check__item">на следующий день не может вспомнить, что происходило вчера во время пьянки;</li>
+            <li class="check__item">утром испытывает “похмелье” и опохмеляется;</li>
+            <li class="check__item">начинает пить даже в том случае, когда его ждут очень важные и неотложные дела;</li>
+          </ul>
+        </div>
+      </section>
+      <section class="alcoholism-causes">
+        <div class="container">
+          <div class="btn btn--green">Причины алкоголизма</div>
+          <h2 class="section__title section__title--alcoholism-treatment">Причины алкоголизма</h2>
+          <div class="section__description section__description--alcoholism-treatment">
+            Чтобы поставить предварительный диагноз «хронический алкоголизм», достаточно убедиться в присутствии хотя бы двух симптомов из перечисленных ниже:</div>
+          <div class="content-block">
+            <div class="content-block__img content-block__img--alcoholism-causes gradient"><img src="./wp-content/themes/genesis/assets/img/treatment.jpg" alt="Причины алкоголизма" width="579" height="381"></div>
+            <div class="content-block__text text">
+              <p>
+                Не в последнюю очередь это может определяться наследственностью. Так, представители многих этнических групп (например, индейцы, народы Сибири) спиваются очень легко. У них нет фермента, 
+                отвечающего за расщепление алкоголя. У некоторых людей снижена активность этого фермента, 
+                они быстрее пьянеют. Такие особенности обмена веществ в организме определяют возможность 
+                развития алкоголизма. Но всё же основную роль играют психогенетические факторы – условия 
+                развития личности, особенно в детстве, условия воспитания и образования.
+              </p>
+              <p>
+                Cледует помнить, что обратное развитие алкоголизма невозможно. Если человек продолжает пить, то накапливаются патологические нарушения и болезнь прогрессирует. Если человек не пьёт, 
+                то развитие алкоголизма приостанавливается. Однако алкоголик никогда не сможет вновь стать 
+                умеренно пьющим человеком. А чтобы бросить пить и выйти в режим устойчивой трезвости, ему 
+                может потребоваться лечение от алкогольной зависимости.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="alcoholism-factors">
+        <div class="container">
+          <div class="btn btn--green">Факторы алкоголизма</div>
+          <h2 class="section__title section__title--alcoholism-treatment">Какие факторы ускоряют развитие алкоголизма?</h2>
+          <div class="section__description section__description--alcoholism-treatment">
+            Как правило, если мужчина начинает систематически пить примерно в 25 лет. Однако во многих случаях всё происходит гораздо быстрее. 
+            Этому способствуют следующие обстоятельства:
+          </div>
+          <ul class="check__list check__list--chronic-alcoholism">
+            <li class="check__item">если организм ослаблен чрезмерными физическими и психическими нагрузками (это касается студентов и спортсменов) или различными заболеваниями;</li>
+            <li class="check__item">если человек осознанно употребляет алкоголь, чтобы получить «кайф», забыть о неприятностях, или просто «пьёт за компанию»;</li>
+            <li class="check__item">если человек одновременно употребляет и другие наркотики (например, табакокурение);</li>
+            <li class="check__item">дети и подростки спиваются гораздо быстрее, чем взрослые; </li>
+            <li class="check__item">женщины спиваются быстрее, чем мужчины;</li>
+          </ul>
+        </div>
+      </section>
+      <section class="alcoholism-treatment">
+        <div class="container">
+          <div class="btn btn--green">Лечение алкоголизма</div>
+          <h2 class="section__title section__title--alcoholism-treatment">Лечение от алкоголизма в центре "Генезис"</h2>
+          <div class="content-block">
+            <div class="content-block__img content-block__img--alcoholism-causes gradient"><img src="./wp-content/themes/genesis/assets/img/treatment.jpg" alt="Лечение от алкоголизма в центре Генезис" width="579" height="381"></div>
+            <div class="content-block__text text">
+              <p>
+                Современные методы нацеленные на лечение алкогольной зависимости, в том числе пивного алкоголизма, применяемые в наркологическом центре "Генезис", позволяют:</p>
+              <ul class="methods-list list-style">
+                <li class="methods__item">Нормализовать физическое и психоэмоциональное состояние;</li>
+                <li class="methods__item">Устранить тягу к алкоголю – психическую зависимость;</li>
+                <li class="methods__item">Выработать умение без спиртного сохранять душевный комфорт и позитивное мировосприятие.</li>
+              </ul>
+              <p>В результате, вы сможете избавиться от зависимости, улучшите здоровье и повысите качество своей жизни!</p>
+              <div class="alcoholism-treatment__btns">
+                <button class="btn btn--blue">Получить консультацию</button>
+                <button class="btn btn--blue btn-call">Заказать звонок</button>
+              </div>
+            </div>
+          </div>
+          <section class="advantages">
+            <div class="btn btn--green">Преимущества</div>
+            <div class="numbers">
+              <div class="numbers-block"> 
+                <div class="green-square green-square--advantages">
+                  <svg width="45" height="45">
+                    <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#advantage-1"></use>
+                  </svg>
+                </div>
+                <div class="counts__text counts__text--advantages">Анонимно и конфиденциально</div>
+              </div>
+              <div class="numbers-block"> 
+                <div class="green-square green-square--advantages">
+                  <svg width="45" height="45">
+                    <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#advantage-2"></use>
+                  </svg>
+                </div>
+                <div class="counts__text counts__text--advantages">Работаем со <br> сложными случаями</div>
+              </div>
+              <div class="numbers-block"> 
+                <div class="green-square green-square--advantages">
+                  <svg width="45" height="45">
+                    <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#advantage-3"></use>
+                  </svg>
+                </div>
+                <div class="counts__text counts__text--advantages">Эффективная программа</div>
+              </div>
+              <div class="numbers-block"> 
+                <div class="green-square green-square--advantages">
+                  <svg width="45" height="45">
+                    <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#advantage-4"></use>
+                  </svg>
+                </div>
+                <div class="counts__text counts__text--advantages">Восстановление здоровья и психики</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="alcoholism-price">
+        <div class="container">
+          <div class="btn btn--green">Цены</div>
+          <h2 class="section__title section__title--alcoholism-treatment">Цены лечения алкоголизма в Тольятти</h2>
+          <div class="section__description section__description--alcoholism-treatment">
+            Стоимость на лечение алкоголизма зависит от условий проведения процедур и степени сложности зависимости. Наша клиника лечения алкоголизма все
+            услуги проводит анонимно. Более подробно вы можете узнать, позвонив в наш центр.
+          </div>
+          <div class="services-cards"> 
+            <article class="service__card">
+              <div class="card__price label">от 3 000 ₽</div>
+              <h3 class="card__title--small">Вызов врача на дом</h3>
+              <div class="card__text text">Рациональная психотерапия – способствует лучшему пониманию пациентом своей болезни. </div><a class="btn btn--blue btn--blue-service-card" href="#!">Заказать услугу</a>
+            </article>
+            <article class="service__card">
+              <div class="card__price label">от 2 000 ₽</div>
+              <h3 class="card__title--small">Вывод из запоя</h3>
+              <div class="card__text text">Рациональная психотерапия – способствует лучшему пониманию пациентом своей болезни. </div><a class="btn btn--blue btn--blue-service-card" href="#!">Заказать услугу</a>
+            </article>
+            <article class="service__card">
+              <div class="card__price label">от 4 000 ₽</div>
+              <h3 class="card__title--small">Блокада алкогольного центра</h3>
+              <div class="card__text text">Рациональная психотерапия – способствует лучшему пониманию пациентом своей болезни. </div><a class="btn btn--blue btn--blue-service-card" href="#!">Заказать услугу</a>
+            </article>
+            <article class="service__card">
+              <div class="card__price label">от 6 000 ₽</div>
+              <h3 class="card__title--small">Кодирование по Довженко</h3>
+              <div class="card__text text">Рациональная психотерапия – способствует лучшему пониманию пациентом своей болезни. </div><a class="btn btn--blue btn--blue-service-card" href="#!">Заказать услугу</a>
+            </article>
+            <article class="service__card">
+              <div class="card__price label">от 2 000 ₽</div>
+              <h3 class="card__title--small">Снятие алкогольной интоксикации</h3>
+              <div class="card__text text">Рациональная психотерапия – способствует лучшему пониманию пациентом своей болезни. </div><a class="btn btn--blue btn--blue-service-card" href="#!">Заказать услугу</a>
+            </article>
+          </div>
+          <div class="gray-block gray-block--guarantees">
+            <div class="section__subtitle section__subtitle--guarantees">Мы гарантируем <i>бережное и внимательное отношение</i> ко всем клиентам. Все методы лечения обладают высокой эффективностью и безопасностью, поскольку 
+              проводятся настоящими профессионалами
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-specialists">
+        <div class="container">
+          <div class="btn btn--green">Врачи</div>
+          <h2 class="section__title section__title--alcoholism-treatment">Наши специалисты</h2>
+          <div class="section__description section__description--alcoholism-treatment">
+            У нас работают профессионалы - врачи с большим опытом по оказанию помощи в преодолении алкогольной и наркотической зависимости. 
+            Раз в пять лет врач подтверждает сертификат специалиста в своей области.
+          </div>
+          <div class="content-block">
+            <div class="specialists__content">
+              <div class="specialists__photo gradient-short"><img src="./wp-content/themes/genesis/assets/img/doctor-1.jpg" alt="Андрей Геннадьевич Ткач" width="314" height="472">
+                <div class="specialists__experience">Опыт работы более <span class="specialists__number">25</span> лет</div>
+              </div>
+              <div class="specialists__info specialists__info--staff">
+                <h3 class="specialists__name">Андрей Геннадьевич Ткач</h3>
+                <div class="specialists__position">
+                  психотерапевт, психиатр-нарколог, руководитель Центра психотерапии и наркологии «Генезис»</div>
+                <div class="text">
+                  <p>
+                    Неотложная диагностика и интенсивная терапия абстинентных синдромов. Методика «Кодирование по Довженко» , «Блокада алкогольного центра», «Акупунктурное программирование». 
+                    Активная психотерапия зависимостей. Собственный подход к лечению зависимостей.
+                    «Интегративное переформирование с позитивной фиксацией трезвости».
+                    «Трансформация алкогольной личности».
+                  </p>
+                </div><a class="btn btn--white" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="specialists__content">
+              <div class="specialists__photo gradient-short"><img src="./wp-content/themes/genesis/assets/img/doctor-2.jpg" alt="Королёва Екатерина Александровна" width="314" height="472">
+                <div class="specialists__experience">Опыт работы более <span class="specialists__number">25</span> лет</div>
+              </div>
+              <div class="specialists__info specialists__info--staff">
+                <h3 class="specialists__name">Королёва Екатерина Александровна</h3>
+                <div class="specialists__position">медицинский психолог</div>
+                <div class="specialists__info text">
+                  <p>
+                    Диагностика интеллекта, мышления и эмоционально- волевой, личностной сферы; диагностика и психотерапия детско-родительских отношений, коррекционная работа в
+                    группе при нарушениях отношений со сверстниками;  коррекция поведения 
+                    (конфликты, замкнутость, капризность, непослушание и др.); диагностика и коррекция
+                    эмоциональных нарушений (страхи, агрессия, неустойчивость, тревожность и т.д.).
+                  </p>
+                </div><a class="btn btn--white" href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="licenses">
+        <div class="container">
+          <div class="btn btn--green">Лицензии</div>
+          <h2 class="section__title section__title--licenses">Клиника имеет необходимые лицензии на ведение медицинской деятельности</h2>
+          <div class="slider-wrap"> 
+            <div class="swiper-container swiper-licenses">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-4-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-4.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-5-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-5.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-6-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-6.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-7-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-7.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-8-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-8.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-9-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-9.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-10-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-10.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-11-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-11.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-licenses"><img class="minimized" src="./wp-content/themes/genesis/assets/img/license-12-min.jpg" data-full="./wp-content/themes/genesis/assets/img/license-12.jpg" alt="Лицензия" width="316" height="474">
+                  <div class="img__overlay"></div>
+                  <div class="eye">
+                    <svg width="100" height="100">
+                      <use xlink:href="./wp-content/themes/genesis/assets/img/icons/sprite.svg#zoom"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev--licenses"></div>
+            <div class="swiper-button-next--licenses"></div>
+          </div>
+        </div>
+      </section>
+      <section class="treatment">
+        <div class="container">
+          <div class="btn btn--green">Шаги лечения</div>
+          <h2 class="section__title section__title--treatment">Как проходит лечение?</h2>
+          <section class="treatment-steps">
+            <div class="step">
+              <div class="step__number label">Шаг первый</div>
+              <div class="step__content">
+                <h3>Бесплатная консультация</h3>
+                <p>
+                  Текст о том, что можно придти консультацию, это бесплатно, а также анонимно и полностью конфиденциально.</p>
+                <h4>По завершению консультации вы получите:</h4>
+                <ul>
+                  <li>Варианты лечения заболевания</li>
+                  <li>Рекомендации врача</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__number label">Шаг второй</div>
+              <div class="step__content">
+                <h3>Подписание договора</h3>
+                <p>
+                  Возможно про то, что мы несём ответственность за здоровье наших пациентов и это закреплено договором.</p>
+                <h4>В договоре закреплены ваши права:</h4>
+                <ul>
+                  <li>Варианты лечения заболевания</li>
+                  <li>Рекомендации врача</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__number label">Шаг третий</div>
+              <div class="step__content">
+                <h3>Лечение</h3>
+                <p>
+                  Возможно про то, что мы несём ответственность за здоровье нашихпациентов и это закреплено договором.</p>
+                <h4>В договоре закреплены ваши права:</h4>
+                <ul>
+                  <li>Варианты лечения заболевания</li>
+                  <li>Рекомендации врача</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="problem-solution">
+            <div class="problem-solution__inner"> 
+              <div class="problem-solution__content">
+                <h3 class="problem-solution__title">Не откладывайте решение вашей проблемы на завтра!</h3>
+                <div class="problem-solution__text">
+                  Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
+                  В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, 
+                  используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без 
+                  заметных изменений пять веков, но и перешагнул в электронный дизайн.
+                </div><a class="btn btn--white" href="#!">Записаться на консультацию</a>
+              </div>
+              <div class="content-block__img content-block__img--problem-solution gradient"> <img src="./wp-content/themes/genesis/assets/img/consultation.jpg" alt="Консультация в центре наркологии и психотерапии в Тольятти" width="400" height="250"></div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <div class="btn btn--green">Отзывы</div>
+          <h2 class="section__title section__title--reviews">Отзывы о нашей работе</h2>
+          <div class="slider-wrap">
+            <div class="swiper-container swiper-reviews">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide-reviews"> 
+                  <div class="slide-reviews__inner">
+                    <div class="slide-reviews__text text-italic">
+                      "Мой муж, Сергей, последние 5 лет стабильно сильно выпивал и не хотел лечиться. 
+                      Недавно стало все совсем плохо и я потеряла всякую надежду на нормальную жизнь. 
+                      Подруга посоветовала обратиться в вашу частную клинику. Изучив условия и персонал я 
+                      решила обратиться. После первой встречи с Андреем Геннадьевичем муж твердо решил 
+                      изменить свою жизнь и пройти кодирование от алкоголизма. Пройдя курс кодировки от 
+                      алкоголя по цене, доступной для нашей семьи, он уже 7 месяцев не употребляет спиртные 
+                      напитки и категорически не хочет этого. Большое спасибо вам и вашим специалистам..."
+                    </div>
+                    <div class="slide-reviews__author"> 
+                      <div class="author__avatar"><img src="./wp-content/themes/genesis/assets/img/avatar.jpg" alt="Фото автора отзыва" width="100" height="105"></div>
+                      <div class="author__name">Кристина</div>
+                      <div class="author__city">г. Тольятти</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-reviews"> 
+                  <div class="slide-reviews__inner">
+                    <div class="slide-reviews__text text-italic">
+                      "Мой муж, Сергей, последние 5 лет стабильно сильно выпивал и не хотел лечиться. 
+                      Недавно стало все совсем плохо и я потеряла всякую надежду на нормальную жизнь. 
+                      Подруга посоветовала обратиться в вашу частную клинику. Изучив условия и персонал я 
+                      решила обратиться. После первой встречи с Андреем Геннадьевичем муж твердо решил 
+                      изменить свою жизнь и пройти кодирование от алкоголизма. Пройдя курс кодировки от 
+                      алкоголя по цене, доступной для нашей семьи, он уже 7 месяцев не употребляет спиртные 
+                      напитки и категорически не хочет этого. Большое спасибо вам и вашим специалистам..."
+                    </div>
+                    <div class="slide-reviews__author"> 
+                      <div class="author__avatar"><img src="./wp-content/themes/genesis/assets/img/avatar.jpg" alt="Фото автора отзыва" width="100" height="105"></div>
+                      <div class="author__name">Кристина</div>
+                      <div class="author__city">г. Тольятти</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-reviews"> 
+                  <div class="slide-reviews__inner">
+                    <div class="slide-reviews__text text-italic">
+                      "Мой муж, Сергей, последние 5 лет стабильно сильно выпивал и не хотел лечиться. 
+                      Недавно стало все совсем плохо и я потеряла всякую надежду на нормальную жизнь. 
+                      Подруга посоветовала обратиться в вашу частную клинику. Изучив условия и персонал я 
+                      решила обратиться. После первой встречи с Андреем Геннадьевичем муж твердо решил 
+                      изменить свою жизнь и пройти кодирование от алкоголизма. Пройдя курс кодировки от 
+                      алкоголя по цене, доступной для нашей семьи, он уже 7 месяцев не употребляет спиртные 
+                      напитки и категорически не хочет этого. Большое спасибо вам и вашим специалистам..."
+                    </div>
+                    <div class="slide-reviews__author"> 
+                      <div class="author__avatar"><img src="./wp-content/themes/genesis/assets/img/avatar.jpg" alt="Фото автора отзыва" width="100" height="105"></div>
+                      <div class="author__name">Кристина</div>
+                      <div class="author__city">г. Тольятти</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev--reviews"></div>
+            <div class="swiper-button-next--reviews"></div>
+          </div>
+        </div>
+      </section>
       <section class="questions">
         <div class="container"> 
+          <div class="btn btn--green">Вопрос - ответ</div>
           <h2 class="section__title">Часто задаваемые вопросы</h2>
           <div class="accordion">
             <div class="accordion__box">
@@ -172,6 +680,26 @@
           </div>
         </div>
       </section>
+      <section class="form">
+        <div class="container">
+          <div class="btn btn--green">Консультация</div>
+          <h2 class="section__title section__title--form">Запишитесь на консультацию</h2>
+          <div class="section__description section__description--form">Расскажите вкратце о проблеме в форме обратной связи. <br> На ваши вопросы ответит нарколог в процессе личной консультации.</div>
+          <form class="main-form main-form--down" id="form__down" action="#" method="POST">
+            <div class="inputs-wrap"> 
+              <input class="_req main-form__user-name" type="text" name="user-name" placeholder="Ваше имя">
+              <input class="_req phone-input main-form__user-phone" type="text" name="user-phone" placeholder="+ 7 ___ - __ - __">
+              <input class="_req main-form__user-email" type="email" name="user-email" placeholder="Электронная почта">
+            </div>
+            <textarea class="_req main-form__user-message" name="user-message" placeholder="Напишите ваш вопрос"></textarea>
+            <button class="btn btn--blue btn-send" type="submit">Отправить заявку</button>
+            <div class="checkbox-wrap"> 
+              <input type="checkbox" id="policy-down" name="policy" checked>
+              <label class="form__policy-text" for="policy-down">Вы соглашаетесь с &#160;<a class="form__policy-link" href="#!" target="_blank">условиями обработки персональных данных</a></label>
+            </div>
+          </form>
+        </div>
+      </section>
       <footer class="footer"> 
         <div class="container">
           <div class="footer__top">
@@ -188,20 +716,19 @@
               <p>Задайте ваш вопрос в мессенджерах:</p>
               <nav class="social"> 
                 <ul> 
-                  <li><a href="//api.whatsapp.com/send?phone=79023733294" target="_blank"><img src="../wp-content/themes/genesis/assets/img/icons/whatsapp.svg" alt="Whatsapp"></a></li>
-                  <li><a href="https://vk.com/club31456944" target="_blank"> <img src="../wp-content/themes/genesis/assets/img/icons/vk.svg" alt="VK"></a></li>
-                  <li><a href="viber://chat?number=79023733294" target="_blank"> <img src="../wp-content/themes/genesis/assets/img/icons/viber.svg" alt="Viber"></a></li>
+                  <li><a href="//api.whatsapp.com/send?phone=79023733294" target="_blank"><img src="./wp-content/themes/genesis/assets/img/icons/whatsapp.svg" alt="Whatsapp"></a></li>
+                  <li><a href="https://vk.com/club31456944" target="_blank"> <img src="./wp-content/themes/genesis/assets/img/icons/vk.svg" alt="VK"></a></li>
+                  <li><a href="viber://chat?number=79023733294" target="_blank"> <img src="./wp-content/themes/genesis/assets/img/icons/viber.svg" alt="Viber"></a></li>
                 </ul>
               </nav>
             </div>
-            <button class="btn">Обратный звонок</button>
+            <button class="btn btn-call">Обратный звонок</button>
           </div>
-          <div class="footer__bottom"><a href="#" target="_blank">Карта сайта</a><a href="#" target="_blank">Права и обязанности граждан в сфере охраны здоровья</a><a href="#" target="_blank">Политика конфиденциальности</a></div>
+          <div class="footer__bottom"><a href="site-map.html" target="_blank">Карта сайта</a><a href="documents.html" target="_blank">Права и обязанности граждан в сфере охраны здоровья</a><a href="#" target="_blank">Политика конфиденциальности</a></div>
         </div>
       </footer>
     </div>
     <script defer src="./wp-content/themes/genesis/assets/js/swiper-bundle.min.js"></script>
-    <script defer src="./wp-content/themes/genesis/assets/js/fslightbox.js"></script>
     <script defer src="./wp-content/themes/genesis/assets/js/main.js"></script>
   </body>
 </html>
